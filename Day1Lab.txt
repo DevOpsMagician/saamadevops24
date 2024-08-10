@@ -5,7 +5,7 @@ Code Base				Single								Multiple
 Deployment				one									many
 Simplicity
 Web Server 
-
+built                        single unit                                          collection of units
 
 
 Introduction -> 
