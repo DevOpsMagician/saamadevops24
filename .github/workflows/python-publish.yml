@@ -8,9 +8,7 @@
 
 name: Upload Python Package
 
-on:
-  release:
-    types: [published]
+on: [push,pull_request]
 
 jobs:
   demo2:
@@ -26,8 +24,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install build
-    - name: Build package
-      run: python -m build
-    - run: hello.py
+        pip install -r requirement.txt
+    - name: run code
+      run: python hello.py
 
